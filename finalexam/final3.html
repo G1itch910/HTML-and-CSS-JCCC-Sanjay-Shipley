@@ -1,0 +1,75 @@
+<!-- Sanjay Shipley July 25th 2025, form (final3) -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Sanjay Shipley - Ask Me a Question!
+        </title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1>
+                <strong>Ask Me a Question!</strong>
+            </h1>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="final1.html">Home</a>
+                </li>
+                <li>
+                    <a href="final2.html">Hobbies</a>
+                </li>
+                <li>
+                    <a href="final3.html">Ask Me a Question</a>
+                </li>
+                <li>
+                    <a href="final4.html">Credits</a>
+                </li>
+            </ul>
+        </nav>
+
+        <img src="Mugshot.jpg" alt="A picture of Sanjay holding up an image" height="500" width="360">
+
+        <!-- I was unsure of where to send the form data, so I just used the one from chapter 10 -->
+        <form action="https://webdevbasics.net/scripts/demo.php" method="post" class="homeMain">
+            <label for="topic">Topic:</label>
+            <select size="1" name="topic" id="topic">
+                <option value="general">Question</option>
+                <option value="support">Send me an opportunity</option>
+                <option value="feedback">Feedback</option>
+            </select>
+            <br>
+            <label for="fullname">Full Name:</label>
+            <input type="text" name="fullname" id="fullname" required>
+            <br>
+            Please select your favorite colors (Personal poll from Sanjay) <br>
+            <span>Red <input type="checkbox" name="red" id="red" value="yes"></span>
+            <span>Orange <input type="checkbox" name="orange" id="orange" value="yes"></span>
+            <span>Yellow <input type="checkbox" name="yellow" id="yellow" value="yes"></span>
+            <span>Green <input type="checkbox" name="green" id="green" value="yes"></span>
+            <span>Blue <input type="checkbox" name="blue" id="blue" value="yes"></span>
+            <span>Purple <input type="checkbox" name="Purple" id="Purple" value="yes"></span>
+            <span>Other <input type="checkbox" name="Other" id="Other" value="yes"></span>
+            <br>
+            <br>
+            Is this question regarding the website? <br>
+            <span>Yes <input type="radio" name="web" id="regarding-website" value="yes"></span>
+            <span>No <input type="radio" name="web" id="not-regarding-website" value="no"></span>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <br>
+            <label for="TodayDate">Select Today's date:</label>
+            <input type="date" id="TodayDate" name="TodayDate">
+            <br>
+            <input type="reset" value="Reset Form">
+            <br>
+            <input type="submit" value="Send form">
+        </form>
+
+    </body>
+</html>
